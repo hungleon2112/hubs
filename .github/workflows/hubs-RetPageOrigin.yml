@@ -1,7 +1,7 @@
 name: hubs
 on:
   push:
-    branches: [master, dev]
+    branches: [master, dev, feature/turkey]
   workflow_dispatch:
 
 env:
