@@ -4,9 +4,13 @@
 ###
 from node:16.13 as builder
 workdir hubs
+run mkdir admin
+copy package*.json .
+copy admin/package*.json admin/
+run npm ci && cd admin && npm ci && cd ..
 copy . .
 env BASE_ASSETS_PATH="{{rawhubs-base-assets-path}}"
-run npm ci && npm run build && cd admin && npm ci && npm run build && cp -R dist/* ../dist && cd ..
+run npm run build && cd admin && npm run build && cp -R dist/* ../dist && cd ..
 run mkdir -p dist/pages && mv dist/*.html dist/pages && mv dist/hub.service.js dist/pages && mv dist/schema.toml dist/pages          
 run mkdir rawhubs && mv dist/pages rawhubs && mv dist/assets rawhubs && mv dist/react-components rawhubs/pages && mv dist/favicon.ico rawhubs/pages
 
