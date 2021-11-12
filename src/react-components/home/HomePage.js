@@ -57,7 +57,7 @@ export function HomePage() {
           </div>
           <div className={styles.appInfo}>
             <div className={styles.appDescription}>{configs.translation("app-description")}</div>
-            <iframe width="500px" height="300px" src="https://app.cadgl.com/iframe/d9eaa4c6-56b8-49e9-aa62-a8d59480ca47" title="description"></iframe>
+            <iframe width="500px" height="300px" src="https://app.cadgl.com/iframe/d9eaa4c6-56b8-49e9-aa62-a8d59480ca47/" title="description"></iframe>
             {canCreateRooms && <CreateRoomButton />}
             <PWAButton />
           </div>
