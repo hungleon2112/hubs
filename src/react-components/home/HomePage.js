@@ -47,10 +47,10 @@ export function HomePage() {
   }, []);
 
   const canCreateRooms = !configs.feature("disable_room_creation") || auth.isAdmin;
-
+  
   return (
     <PageContainer className={styles.homePage}>
-      <Container>
+      {/* <Container>
         <div className={styles.hero}>
           <div className={styles.logoContainer}>
             <img alt={configs.translation("app-name")} src={configs.image("logo")} />
@@ -165,7 +165,17 @@ export function HomePage() {
             <FormattedMessage id="home-page.have-code" defaultMessage="Have a room code?" />
           </Button>
         </Column>
-      </Container>
+      </Container> */}
+      <div className="buttons">
+        <div>
+        {canCreateRooms && <CreateRoomButton />}
+        </div>
+        <div style={{marginTop: 20, marginLeft: 80}}>
+        <a href="/signin" rel="noreferrer noopener">
+          <FormattedMessage id="header.sign-in" defaultMessage="Sign In" />
+        </a>
+        </div>
+      </div>
     </PageContainer>
   );
 }
