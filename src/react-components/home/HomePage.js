@@ -50,7 +50,7 @@ export function HomePage() {
   
   return (
     <PageContainer className={styles.homePage}>
-      {/* <Container>
+      <Container>
         <div className={styles.hero}>
           <div className={styles.logoContainer}>
             <img alt={configs.translation("app-name")} src={configs.image("logo")} />
@@ -165,7 +165,7 @@ export function HomePage() {
             <FormattedMessage id="home-page.have-code" defaultMessage="Have a room code?" />
           </Button>
         </Column>
-      </Container> */}
+      </Container>
       <div className="buttons">
         <div>
         {canCreateRooms && <CreateRoomButton />}
