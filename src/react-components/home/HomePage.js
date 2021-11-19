@@ -50,6 +50,60 @@ export function HomePage() {
   
   return (
     <PageContainer className={styles.homePage}>
+      <div className="row" style={{marginTop: 105}}>
+        <div className="col-md-3">
+        </div>
+        <div className="col-md-6" style={{display: 'flex', justifyContent: 'center'}}>
+          <div>
+            <h2 style={{fontSize: 65, color: 'white', fontWeight: 500}}>XYZ</h2>
+          </div>
+        </div>
+        <div className="col-md-3">
+        </div>
+      </div>
+      <div className="row">
+        <div className="col-md-3">
+        </div>
+        <div className="col-md-6" style={{display: 'flex', justifyContent: 'center'}}>
+          <div>
+            <img src="https://cadgl.com/meta-xyz-images/Metaverse-xyz.png" />
+          </div>
+        </div>
+        <div className="col-md-3">
+        </div>
+      </div>
+      <div className="row">
+        <div className="col-md-3">
+        </div>
+        <div className="col-md-6" style={{display: 'flex', justifyContent: 'center'}}>
+          <div>
+            <h2 style={{fontSize: 65, color: 'white', fontWeight: 400, textAlign: 'center'}}>CHOOSE AN AVATAR, PUT ON YOUR HEADSET AND JUMP IN</h2>
+          </div>
+        </div>
+        <div className="col-md-3">
+        </div>
+      </div>
+      <div className="row" style={{marginTop: 50}}>
+        <div className="col-md-3">
+        </div>
+        <div className="col-md-6" style={{display: 'flex', justifyContent: 'center'}}>
+          <div className="buttons">
+            <div>
+            {canCreateRooms && <CreateRoomButton />}
+            </div>
+            <div style={{marginTop: 20, marginLeft: 80}}>
+              <a href="/signin" rel="noreferrer noopener">
+                <FormattedMessage id="header.sign-in" defaultMessage="Sign In" />
+              </a>
+            </div>
+        </div>
+        </div>
+        <div className="col-md-3">
+        </div>
+      </div>
+      <div style={{position: 'absolute', bottom: 40, width: 100+'%', textAlign: 'center'}}>
+          <h2 style={{color: 'white', fontWeight: 400}}>XYZ 2022</h2>
+      </div>
       {/* <Container>
         <div className={styles.hero}>
           <div className={styles.logoContainer}>
@@ -166,16 +220,7 @@ export function HomePage() {
           </Button>
         </Column>
       </Container> */}
-      <div className="buttons">
-        <div>
-        {canCreateRooms && <CreateRoomButton />}
-        </div>
-        <div style={{marginTop: 20, marginLeft: 80}}>
-        <a href="/signin" rel="noreferrer noopener">
-          <FormattedMessage id="header.sign-in" defaultMessage="Sign In" />
-        </a>
-        </div>
-      </div>
+      
     </PageContainer>
   );
 }

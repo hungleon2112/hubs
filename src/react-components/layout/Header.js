@@ -25,7 +25,24 @@ export function Header({
 }) {
   return (
     <header>
-      <Container as="div" className={styles.container}>
+      <div className="row">
+        <div className="col-md-1">
+          <img style={{float: 'right'}} src="https://cadgl.com/meta-xyz-images/logo-xyz.png" />
+        </div>
+        <div className="col-md-1 menu-text">
+          HOME
+        </div>
+        <div className="col-md-1 menu-text">
+          MARKET
+        </div>
+        <div className="col-md-1 menu-text">
+          LEARN
+        </div>
+        <div className="col-md-1 menu-text">
+          TOKEN
+        </div>
+      </div>
+      {/* <Container as="div" className={styles.container}>
         <nav>
           <ul>
             <li>
@@ -99,7 +116,7 @@ export function Header({
             </a>
           )}
         </div>
-      </Container>
+      </Container> */}
     </header>
   );
 }

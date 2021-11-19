@@ -182,16 +182,18 @@
 
 /* Custom */
 
-  header, footer{
+  footer{
     display: none !important;
+  }
+
+  header{
+    background-color: #131b26;
   }
 
   main{
     padding: 0 !important;
-    background: url('https://cadgl.com/icons_cadgl/metaverse-logo03.jpg');
-    .buttons{
-      margin-top: 40%;
-      margin-left: 50%;
-    }
+    background: url('https://cadgl.com/meta-xyz-images/background-xyz.png');
+    background-repeat: no-repeat;
+    
   }
   
