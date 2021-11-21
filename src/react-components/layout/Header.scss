@@ -101,6 +101,13 @@ header {
 
 
 
+footer{
+  display: none !important;
+}
+
+header{
+  background-color: #131b26;
+}
 
 
 .menu-text{
@@ -112,16 +119,165 @@ header {
 }
 
 
+/* Mobile Portrait */
+@media only screen and (min-device-width: 320px) and (max-device-width: 480px),
+  (min-device-width: 320px) and (max-device-width: 480px) and (min-device-width: 360px) 
+  and (max-device-width: 640px) and (-webkit-min-device-pixel-ratio: 2) and (min-device-width: 375px) 
+  and (max-device-width: 667px) and (-webkit-min-device-pixel-ratio: 2) and (orientation: portrait) 
+  and (min-device-width: 375px) and (max-device-width: 667px) and (-webkit-min-device-pixel-ratio: 2) 
+  {
+    #home-root, #ui-root{
+      display: block !important;
+    }
+    header{
+      .row{
+        .col-md-1{
+          width: 19%;
+        }
+      }
+    }
+    main{
+      height: 100%;
+      background-position: center;
+      .row:first-child{
+        margin-top: 0px !important;
+        padding-top: 50px;
+      }
+      h2{
+        font-size: 33px !important;
+      }
+      #footer-text{
+        margin-top: 310px !important;
+        h2{
+          font-size: 20px !important;
+        }
+      }
+    }
+}
 
 
 
+/* Mobile Landscape */
+@media only screen 
+  and (min-device-width: 375px) 
+  and (max-device-width: 667px) 
+  and (-webkit-min-device-pixel-ratio: 2)
+  and (orientation: landscape),
+  (min-device-width: 414px) 
+  and (max-device-width: 736px) 
+  and (-webkit-min-device-pixel-ratio: 3)
+  and (orientation: landscape),
+  /* Iphone X */
+  (min-device-width: 375px) 
+  and (max-device-width: 812px) 
+  and (-webkit-min-device-pixel-ratio: 3)
+  and (orientation: landscape)
+  {
+    #home-root, #ui-root{
+      display: block !important;
+    }
+    header{
+      .row{
+        .col-md-1{
+          width: 30%;
+          max-width: 30%;
+          flex: 1%;
+        }
+      }
+    }
+    main{
+      height: auto;
+      background-position: center;
+      .row:first-child{
+        margin-top: 0px !important;
+        padding-top: 50px;
+      }
+      h2{
+        font-size: 33px !important;
+      }
+      #footer-text{
+        margin-top: 310px !important;
+        h2{
+          font-size: 20px !important;
+        }
+      }
+    }
+  }
 
 
+/* Tablet Portrait */
+@media only screen 
+  and (min-device-width: 768px) 
+  and (max-device-width: 1024px) 
+  and (orientation: portrait) 
+  and (-webkit-min-device-pixel-ratio: 1){
+    #home-root, #ui-root{
+      display: block !important;
+    }
+    header{
+      .row{
+        .col-md-1{
+          width: 30%;
+          max-width: 30%;
+          flex: 1%;
+        }
+      }
+    }
+    main{
+      height: auto;
+      background-position: center;
+      .row:first-child{
+        margin-top: 0px !important;
+        padding-top: 50px;
+      }
+      h2{
+        font-size: 33px !important;
+      }
+      #footer-text{
+        margin-top: 395px !important;
+        h2{
+          font-size: 20px !important;
+        }
+      }
+    }
+  }
 
 
-
-
-
+  @media only screen 
+  and (min-device-width: 768px) 
+  and (max-device-width: 1024px) 
+  and (orientation: landscape) 
+  and (-webkit-min-device-pixel-ratio: 1) {
+    #home-root, #ui-root{
+      display: block !important;
+    }
+    header{
+      .row{
+        .col-md-1{
+          width: 30%;
+          max-width: 30%;
+          flex: 1%;
+        }
+      }
+    }
+    main{
+      height: auto;
+      background-position: center;
+      .row:first-child{
+        margin-top: 0px !important;
+        padding-top: 50px;
+      }
+      h2{
+        font-size: 33px !important;
+      }
+      #footer-text{
+        margin-top: 178px !important;
+        h2{
+          font-size: 20px !important;
+        }
+      }
+    }
+  }
 
 
 

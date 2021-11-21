@@ -77,7 +77,7 @@ export function HomePage() {
         </div>
         <div className="col-md-6" style={{display: 'flex', justifyContent: 'center'}}>
           <div>
-            <h2 style={{fontSize: 65, color: 'white', fontWeight: 400, textAlign: 'center'}}>CHOOSE AN AVATAR, PUT ON YOUR HEADSET AND JUMP IN</h2>
+            <h2 style={{fontSize: 50, color: 'white', fontWeight: 400, textAlign: 'center'}}>CHOOSE AN AVATAR, PUT ON YOUR HEADSET AND JUMP IN</h2>
           </div>
         </div>
         <div className="col-md-3">
@@ -101,7 +101,7 @@ export function HomePage() {
         <div className="col-md-3">
         </div>
       </div>
-      <div style={{position: 'absolute', bottom: 40, width: 100+'%', textAlign: 'center'}}>
+      <div id="footer-text" style={{width: 100+'%', textAlign: 'center' ,marginTop: 185}}>
           <h2 style={{color: 'white', fontWeight: 400}}>XYZ 2022</h2>
       </div>
       {/* <Container>
