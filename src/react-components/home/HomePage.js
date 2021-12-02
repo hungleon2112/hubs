@@ -101,9 +101,9 @@ export function HomePage() {
         <div className="col-md-3">
         </div>
       </div>
-      <div id="footer-text" style={{width: 100+'%', textAlign: 'center' ,marginTop: 185}}>
+      {/* <div id="footer-text" style={{width: 100+'%', textAlign: 'center' ,marginTop: 185}}>
           <h2 style={{color: 'white', fontWeight: 400}}>XYZ 2022</h2>
-      </div>
+      </div> */}
       {/* <Container>
         <div className={styles.hero}>
           <div className={styles.logoContainer}>
