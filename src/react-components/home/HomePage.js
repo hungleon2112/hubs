@@ -87,7 +87,7 @@ export function HomePage() {
         <div className="col-md-3">
         </div>
         <div className="col-md-6" style={{display: 'flex', justifyContent: 'center'}}>
-          <div className="buttons">
+          <div className="buttons" style={{textAlign: 'center'}}>
             <div>
             {canCreateRooms && <CreateRoomButton />}
             </div>
