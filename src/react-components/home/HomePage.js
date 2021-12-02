@@ -91,7 +91,7 @@ export function HomePage() {
             <div>
             {canCreateRooms && <CreateRoomButton />}
             </div>
-            <div style={{marginTop: 20, marginLeft: 80}}>
+            <div style={{marginTop: 20}}>
               <a href="/signin" rel="noreferrer noopener">
                 <FormattedMessage id="header.sign-in" defaultMessage="Sign In" />
               </a>
