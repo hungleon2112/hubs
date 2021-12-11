@@ -66,7 +66,7 @@ export function HomePage() {
         </div>
         <div className="col-md-6" style={{display: 'flex', justifyContent: 'center'}}>
           <div>
-            <img src="https://cadgl.com/meta-xyz-images/Metaverse-xyz.png" />
+            <img src="https://cadgl.net/meta-xyz-images/Metaverse-xyz.png" />
           </div>
         </div>
         <div className="col-md-3">

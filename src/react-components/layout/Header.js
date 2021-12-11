@@ -27,7 +27,7 @@ export function Header({
     <header>
       <div className="row">
         <div className="col-md-1">
-          <img style={{float: 'right', width: 50+'%'}} src="https://cadgl.com/meta-xyz-images/logo-xyz.png" />
+          <img style={{float: 'right', width: 50+'%'}} src="https://cadgl.net/meta-xyz-images/logo-xyz.png" />
         </div>
         <div className="col-md-1 menu-text">
           HOME
