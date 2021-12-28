@@ -54,8 +54,8 @@ export function HomePage() {
         <div className="col-md-3">
         </div>
         <div className="col-md-6" style={{display: 'flex', justifyContent: 'center'}}>
-          <div>
-            <h2 style={{fontSize: 65, color: 'white', fontWeight: 500}}>XYZ</h2>
+          <div style={{width: 12+'%'}}>
+            <img style={{width: 100+'%'}} src="https://cadgl.net/meta-xyz-images/logo-xyz-2.png" />
           </div>
         </div>
         <div className="col-md-3">
@@ -77,7 +77,29 @@ export function HomePage() {
         </div>
         <div className="col-md-6" style={{display: 'flex', justifyContent: 'center'}}>
           <div>
-            <h2 style={{fontSize: 50, color: 'white', fontWeight: 400, textAlign: 'center'}}>CHOOSE AN AVATAR, PUT ON YOUR HEADSET AND JUMP IN</h2>
+            <h2 className="outline-text" style={{fontSize: 50, color: 'white', fontWeight: 400, textAlign: 'center'}}>CHOOSE AN AVATAR, PUT ON YOUR HEADSET AND JUMP IN</h2>
+          </div>
+        </div>
+        <div className="col-md-3">
+        </div>
+      </div>
+      <div className="row" style={{marginTop: 50}}>
+        <div className="col-md-3">
+        </div>
+        <div className="col-md-6" style={{display: 'flex', justifyContent: 'center'}}>
+          <div>
+            <button onClick={()=> {window.open("https://meta-xyz.live/Y2e54ot/cocktail-bar/", "_blank");}} className="home-buttons">Demo: Cocktailbar Metaverse</button>
+          </div>
+        </div>
+        <div className="col-md-3">
+        </div>
+      </div>
+      <div className="row" style={{marginTop: 10}}>
+        <div className="col-md-3">
+        </div>
+        <div className="col-md-6" style={{display: 'flex', justifyContent: 'center'}}>
+          <div>
+            <button title="coming soon" className="home-buttons">Create your Metaverse</button>
           </div>
         </div>
         <div className="col-md-3">

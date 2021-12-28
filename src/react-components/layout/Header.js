@@ -25,21 +25,21 @@ export function Header({
 }) {
   return (
     <header>
-      <div className="row">
-        <div className="col-md-1">
-          <img style={{float: 'right', width: 50+'%'}} src="https://cadgl.net/meta-xyz-images/logo-xyz.png" />
+      <div className="row" style={{padding: 20}}>
+        <div className="col-md-1 menu-text" title="coming soon">
+          MARKETPLACE
         </div>
-        <div className="col-md-1 menu-text">
-          HOME
+        <div className="col-md-1 menu-text" title="coming soon">
+          TOKEN
         </div>
-        <div className="col-md-1 menu-text">
-          MARKET
+        <div className="col-md-1 menu-text" title="coming soon">
+          STAKE
         </div>
-        <div className="col-md-1 menu-text">
+        <div className="col-md-1 menu-text" title="coming soon">
           LEARN
         </div>
-        <div className="col-md-1 menu-text">
-          TOKEN
+        <div className="col-md-2 offset-md-6 menu-text" title="coming soon" style={{cursor: 'pointer'}} onClick={()=> {window.open("https://twitter.com/XYZmarketplace", "_blank");}}>
+          Lets stay connected <img  style={{marginLeft: 10, width: 12+'%'}} src="https://cadgl.net/meta-xyz-images/xyz-twitter.png" />
         </div>
       </div>
       {/* <Container as="div" className={styles.container}>

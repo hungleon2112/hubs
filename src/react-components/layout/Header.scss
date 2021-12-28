@@ -132,7 +132,10 @@ header{
     header{
       .row{
         .col-md-1{
-          width: 19%;
+          width: 50%;
+        }
+        .col-md-2{
+          margin-top: 10px;
         }
       }
     }
@@ -179,9 +182,18 @@ header{
     header{
       .row{
         .col-md-1{
+          width: 10% !important;
+          max-width: 17% !important;
+          flex: 1%;
+        }
+        .col-md-2{
           width: 30%;
           max-width: 30%;
           flex: 1%;
+          padding-top: 0px  !important;
+        }
+        .offset-md-6 {
+            margin-left: 0%  !important;
         }
       }
     }
@@ -217,9 +229,18 @@ header{
     header{
       .row{
         .col-md-1{
+          width: 10%;
+          max-width: 16%;
+          flex: 1%;
+        }
+        .col-md-2{
           width: 30%;
           max-width: 30%;
           flex: 1%;
+          padding-top: 0px;
+        }
+        .offset-md-6 {
+            margin-left: 0%;
         }
       }
     }
@@ -254,9 +275,18 @@ header{
     header{
       .row{
         .col-md-1{
+          width: 10%;
+          max-width: 18%;
+          flex: 1%;
+        }
+        .col-md-2{
           width: 30%;
           max-width: 30%;
           flex: 1%;
+          padding-top: 0px;
+        }
+        .offset-md-6 {
+            margin-left: 0%;
         }
       }
     }
