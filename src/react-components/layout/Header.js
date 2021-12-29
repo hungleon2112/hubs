@@ -43,7 +43,7 @@ export function Header({
           <p className="menu-sub-text">Coming soon</p>
         </div>
         <div className="col-md-2 menu-text "onClick={()=> {window.open("https://meta-xyz.readyplayer.me", "_blank");}}>
-          <p className="menu-avatar" style={{position: 'relative', top: -10}}>Create Your Avatar</p>
+          <p className="menu-avatar" style={{position: 'relative', top: -10}}>CREATE YOUR AVATAR</p>
         </div>
         <div className="col-md-2 offset-md-4 menu-text"  style={{cursor: 'pointer'}} onClick={()=> {window.open("https://twitter.com/XYZmarketplace", "_blank");}}>
           Lets stay connected <img  style={{marginLeft: 10, width: 12+'%'}} src="https://cadgl.net/meta-xyz-images/xyz-twitter.png" />
