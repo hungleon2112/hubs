@@ -25,22 +25,59 @@ export function Header({
 }) {
   return (
     <header>
-      <div className="row" style={{padding: 20}}>
-        <div className="col-md-1 menu-text" title="coming soon">
+      <div className="row non-mobile" style={{padding: 20}}>
+        <div className="col-md-1 menu-text">
           MARKETPLACE
+          <p className="menu-sub-text">Coming soon</p>
         </div>
-        <div className="col-md-1 menu-text" title="coming soon">
+        <div className="col-md-1 menu-text">
           TOKEN
+          <p className="menu-sub-text">Coming soon</p>
         </div>
-        <div className="col-md-1 menu-text" title="coming soon">
+        <div className="col-md-1 menu-text" >
           STAKE
+          <p className="menu-sub-text">Coming soon</p>
         </div>
-        <div className="col-md-1 menu-text" title="coming soon">
+        <div className="col-md-1 menu-text">
           LEARN
+          <p className="menu-sub-text">Coming soon</p>
         </div>
-        <div className="col-md-2 offset-md-6 menu-text" title="coming soon" style={{cursor: 'pointer'}} onClick={()=> {window.open("https://twitter.com/XYZmarketplace", "_blank");}}>
+        <div className="col-md-2 menu-text "onClick={()=> {window.open("https://meta-xyz.readyplayer.me", "_blank");}}>
+          <p className="menu-avatar" style={{position: 'relative', top: -10}}>Create Your Avatar</p>
+        </div>
+        <div className="col-md-2 offset-md-4 menu-text"  style={{cursor: 'pointer'}} onClick={()=> {window.open("https://twitter.com/XYZmarketplace", "_blank");}}>
           Lets stay connected <img  style={{marginLeft: 10, width: 12+'%'}} src="https://cadgl.net/meta-xyz-images/xyz-twitter.png" />
         </div>
+      </div>
+      <div class="topnav" style={{display: 'none'}}>
+            <div id="myLinks">
+              <a href="#">MARKETPLACE
+                <p className="menu-sub-text">Coming soon</p>
+              </a>
+              <a href="#">TOKEN
+                <p className="menu-sub-text">Coming soon</p>
+              </a>
+              <a href="#">STAKE
+                <p className="menu-sub-text">Coming soon</p>
+              </a>
+              <a href="#">LEARN
+                <p className="menu-sub-text">Coming soon</p>
+              </a>
+              <a href="https://meta-xyz.readyplayer.me" target="_blank">Create Your Avatar
+              </a>
+              <a target="_blank" href="https://twitter.com/XYZmarketplace">Lets stay connected <img  style={{marginLeft: 10, width: 12+'%', display: 'inline-block'}} src="https://cadgl.net/meta-xyz-images/xyz-twitter.png" />
+              </a>
+            </div>
+            <a href="javascript:void(0);" className="icon" onClick={()=>{
+              var x = document.getElementById("myLinks");
+              if (x.style.display === "block") {
+                x.style.display = "none";
+              } else {
+                x.style.display = "block";
+              }
+            }}>
+              <i class="fa fa-bars"></i>
+            </a>
       </div>
       {/* <Container as="div" className={styles.container}>
         <nav>

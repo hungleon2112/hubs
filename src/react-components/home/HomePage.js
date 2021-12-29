@@ -88,7 +88,7 @@ export function HomePage() {
         </div>
         <div className="col-md-6" style={{display: 'flex', justifyContent: 'center'}}>
           <div>
-            <button onClick={()=> {window.open("https://meta-xyz.live/Y2e54ot/cocktail-bar/", "_blank");}} className="home-buttons">Demo: Cocktailbar Metaverse</button>
+            <button onClick={()=> {window.open("https://meta-xyz.live/Y2e54ot/cocktail-bar/", "_blank");}} className="home-buttons">Cocktailbar Metaverse</button>
           </div>
         </div>
         <div className="col-md-3">
@@ -99,7 +99,8 @@ export function HomePage() {
         </div>
         <div className="col-md-6" style={{display: 'flex', justifyContent: 'center'}}>
           <div>
-            <button title="coming soon" className="home-buttons">Create your Metaverse</button>
+            <button  className="home-buttons">Create your Metaverse
+          <p className="menu-sub-text">Coming soon</p></button>
           </div>
         </div>
         <div className="col-md-3">
@@ -108,7 +109,7 @@ export function HomePage() {
       <div className="row" style={{marginTop: 50}}>
         <div className="col-md-3">
         </div>
-        <div className="col-md-6" style={{display: 'flex', justifyContent: 'center'}}>
+        {/* <div className="col-md-6" style={{display: 'flex', justifyContent: 'center'}}>
           <div className="buttons" style={{textAlign: 'center'}}>
             <div>
             {canCreateRooms && <CreateRoomButton />}
@@ -118,8 +119,8 @@ export function HomePage() {
                 <FormattedMessage id="header.sign-in" defaultMessage="Sign In" />
               </a>
             </div>
-        </div>
-        </div>
+          </div>
+        </div> */}
         <div className="col-md-3">
         </div>
       </div>

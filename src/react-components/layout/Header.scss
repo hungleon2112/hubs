@@ -107,6 +107,7 @@ footer{
 
 header{
   background-color: #131b26;
+  
 }
 
 
@@ -116,6 +117,79 @@ header{
   display: flex;
   justify-content: center;
   align-items: center;
+  flex-flow: wrap;
+  .menu-sub-text{
+    color: rgb(255 255 255 / 45%);
+  }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* Custom */
+
+.menu-text:hover{
+  cursor: pointer;
+}
+
+.topnav #myLinks {
+  display: none;
+}
+
+.topnav a {
+  color: white;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
+  display: block;
+}
+
+.topnav a.icon {
+  display: block;
+  position: absolute;
+  right: 0;
+  top: 0;
+}
+
+.active {
+  background-color: #04AA6D;
+  color: white;
+}
+
+.menu-avatar{
+  margin-left: -80px;
+}
+
+@media only screen 
+  and (max-width: 1260px) 
+  and (min-width: 813px) {
+    header{
+      .row{
+        .col-md-1{
+          min-width: 140px;
+        }
+        .offset-md-4 {
+            margin-left: 21%  !important;
+        }
+        .menu-avatar{
+          margin-left: 0px;
+        }
+      }
+    }
 }
 
 
@@ -130,6 +204,19 @@ header{
       display: block !important;
     }
     header{
+      .topnav {
+        display: block !important;
+        overflow: hidden;
+        position: relative;
+        min-height: 45px;
+        .menu-sub-text{
+          color: rgb(255 255 255 / 45%);
+          font-weight: normal;
+        }
+      }
+      .non-mobile{
+        display: none;
+      }
       .row{
         .col-md-1{
           width: 50%;
@@ -138,6 +225,11 @@ header{
           margin-top: 10px;
         }
       }
+
+      
+
+
+
     }
     main{
       height: 100%;
@@ -158,8 +250,6 @@ header{
     }
 }
 
-
-
 /* Mobile Landscape */
 @media only screen 
   and (min-device-width: 375px) 
@@ -178,22 +268,38 @@ header{
   {
     #home-root, #ui-root{
       display: block !important;
-    }
-    header{
-      .row{
-        .col-md-1{
-          width: 10% !important;
-          max-width: 17% !important;
-          flex: 1%;
+      header{
+        .topnav {
+          display: block !important;
+          overflow: hidden;
+          position: relative;
+          min-height: 45px;
+          .menu-sub-text{
+            color: rgb(255 255 255 / 45%);
+            font-weight: normal;
+          }
+          img{
+            width: 3% !important;
+          }
         }
-        .col-md-2{
-          width: 30%;
-          max-width: 30%;
-          flex: 1%;
-          padding-top: 0px  !important;
+        .non-mobile{
+          display: none;
         }
-        .offset-md-6 {
-            margin-left: 0%  !important;
+        .row{
+          .col-md-1{
+            width: 10% !important;
+            max-width: 17% !important;
+            flex: 1%;
+          }
+          .col-md-2{
+            width: 30%;
+            max-width: 30%;
+            flex: 1%;
+            padding-top: 0px  !important;
+          }
+          .offset-md-4 {
+              margin-left: 0%  !important;
+          }
         }
       }
     }
@@ -227,6 +333,22 @@ header{
       display: block !important;
     }
     header{
+      .topnav {
+        display: block !important;
+        overflow: hidden;
+        position: relative;
+        min-height: 45px;
+        .menu-sub-text{
+          color: rgb(255 255 255 / 45%);
+          font-weight: normal;
+        }
+        img{
+          width: 3% !important;
+        }
+      }
+      .non-mobile{
+        display: none;
+      }
       .row{
         .col-md-1{
           width: 10%;
@@ -239,7 +361,7 @@ header{
           flex: 1%;
           padding-top: 0px;
         }
-        .offset-md-6 {
+        .offset-md-4 {
             margin-left: 0%;
         }
       }
@@ -264,6 +386,7 @@ header{
   }
 
 
+/* Tablet landscape */
   @media only screen 
   and (min-device-width: 768px) 
   and (max-device-width: 1024px) 
@@ -273,11 +396,25 @@ header{
       display: block !important;
     }
     header{
+      .topnav {
+        display: block !important;
+        overflow: hidden;
+        position: relative;
+        min-height: 45px;
+        .menu-sub-text{
+          color: rgb(255 255 255 / 45%);
+          font-weight: normal;
+        }
+        img{
+          width: 3% !important;
+        }
+      }
+      .non-mobile{
+        display: none;
+      }
       .row{
         .col-md-1{
-          width: 10%;
-          max-width: 18%;
-          flex: 1%;
+          min-width: 140px;
         }
         .col-md-2{
           width: 30%;
@@ -285,8 +422,8 @@ header{
           flex: 1%;
           padding-top: 0px;
         }
-        .offset-md-6 {
-            margin-left: 0%;
+        .offset-md-4 {
+          margin-left: 20%  !important;
         }
       }
     }

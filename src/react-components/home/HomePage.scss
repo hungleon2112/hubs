@@ -183,7 +183,7 @@
 /* Custom */
 
   #home-root{
-    // overflow-x: hidden;
+    overflow-x: hidden;
     // overflow-y: hidden;
     main{
       padding: 0 !important;
@@ -197,6 +197,9 @@
         padding: 15px 60px 15px 60px;
         font-size: 24px;
         min-width: 440px;
+        .menu-sub-text{
+          color: rgb(255 255 255 / 45%);
+        }
       }
     }
   
@@ -217,12 +220,12 @@
   and (min-device-width: 375px) and (max-device-width: 667px) and (-webkit-min-device-pixel-ratio: 2) 
   {
     #home-root{
-      // overflow-x: hidden;
+      overflow-x: hidden;
       // overflow-y: hidden;
       main{
         padding: 0 !important;
-        background: url('https://cadgl.net/meta-xyz-images/background-xyz.png');
-        background-repeat: no-repeat;
+        background: url('https://cadgl.net/meta-xyz-images/background-mobile-xyz.png');
+        background-repeat: round;
         .home-buttons{
           border-color: #df1660!important;
           background-color: #df1660!important;
@@ -236,4 +239,59 @@
       }
     }
   }
+
+  
+/* Mobile Landscape */
+@media only screen 
+and (min-device-width: 375px) 
+and (max-device-width: 667px) 
+and (-webkit-min-device-pixel-ratio: 2)
+and (orientation: landscape),
+(min-device-width: 414px) 
+and (max-device-width: 736px) 
+and (-webkit-min-device-pixel-ratio: 3)
+and (orientation: landscape),
+/* Iphone X */
+(min-device-width: 375px) 
+and (max-device-width: 812px) 
+and (-webkit-min-device-pixel-ratio: 3)
+and (orientation: landscape)
+{
+  #home-root{
+    overflow-x: hidden;
+    // overflow-y: hidden;
+    main{
+      background-repeat: round;
+    }
+  }
+}
+
+/* Tablet Portrait */
+@media only screen 
+  and (min-device-width: 768px) 
+  and (max-device-width: 1024px) 
+  and (orientation: portrait) 
+  and (-webkit-min-device-pixel-ratio: 1){
+    #home-root{
+      overflow-x: hidden;
+      // overflow-y: hidden;
+      main{
+        background-repeat: round;
+      }
+    }
+}
+
+
+/* Tablet landscape */
+@media only screen 
+and (min-device-width: 768px) 
+and (max-device-width: 1024px) 
+and (orientation: landscape) 
+and (-webkit-min-device-pixel-ratio: 1) {
+  #home-root{
+    main{
+      background-repeat: round;
+    }
+  }
+}
   
