@@ -101,6 +101,23 @@ header {
 
 
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* Custom */
+
 footer{
   display: none !important;
 }
@@ -118,29 +135,13 @@ header{
   justify-content: center;
   align-items: center;
   flex-flow: wrap;
+  font-size: 11pt;
   .menu-sub-text{
     color: rgb(255 255 255 / 45%);
   }
 }
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-/* Custom */
 
 .menu-text:hover{
   cursor: pointer;
