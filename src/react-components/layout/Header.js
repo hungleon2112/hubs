@@ -63,7 +63,7 @@ export function Header({
               <a href="#">LEARN
                 <p className="menu-sub-text">Coming soon</p>
               </a>
-              <a href="https://meta-xyz.readyplayer.me" target="_blank">Create Your Avatar
+              <a href="https://meta-xyz.readyplayer.me" target="_blank">CREATE YOUR AVATAR
               </a>
               <a target="_blank" href="https://twitter.com/XYZmarketplace">Lets stay connected <img  style={{marginLeft: 10, width: 12+'%', display: 'inline-block'}} src="https://cadgl.net/meta-xyz-images/xyz-twitter.png" />
               </a>
