@@ -54,7 +54,7 @@ export function HomePage() {
         <div className="col-md-3">
         </div>
         <div className="col-md-6" style={{display: 'flex', justifyContent: 'center'}}>
-          <div style={{width: 12+'%'}}>
+          <div style={{width: 16+'%'}}>
             <img style={{width: 100+'%'}} src="https://cadgl.net/meta-xyz-images/logo-xyz-2.png" />
           </div>
         </div>
