@@ -13,7 +13,7 @@ export function AvatarUrlModal({ onSubmit, onClose }) {
   return (
     <Modal title="Custom Avatar URL" beforeTitle={<CloseButton onClick={onClose} />}>
       <Column as="form" padding center onSubmit={handleSubmit(onSubmit)}>
-        <TextInputField
+        {/* <TextInputField
           name="url"
           label={<FormattedMessage id="avatar-url-modal.avatar-url-label" defaultMessage="Avatar GLB URL" />}
           placeholder="https://example.com/avatar.glb"
@@ -28,7 +28,7 @@ export function AvatarUrlModal({ onSubmit, onClose }) {
               />
             </a>
           }
-        />
+        /> */}
         <ApplyButton type="submit" />
       </Column>
     </Modal>
