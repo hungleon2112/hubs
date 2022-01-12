@@ -13,7 +13,7 @@ export function AvatarUrlModal({ onSubmit, onClose }) {
   return (
     <Modal title="Custom Avatar URL" beforeTitle={<CloseButton onClick={onClose} />}>
       <Column as="form" padding center onSubmit={handleSubmit(onSubmit)}>
-        {/* <TextInputField
+        <TextInputField
           name="url"
           label={<FormattedMessage id="avatar-url-modal.avatar-url-label" defaultMessage="Avatar GLB URL" />}
           placeholder="https://example.com/avatar.glb"
@@ -21,14 +21,14 @@ export function AvatarUrlModal({ onSubmit, onClose }) {
           required
           ref={register}
           description={
-            <a href="https://hubs.mozilla.com/docs/intro-avatars.html" target="_blank" rel="noopener noreferrer">
-              <FormattedMessage
-                id="avatar-url-modal.custom-avatar-docs-link"
-                defaultMessage="Learn more about custom avatars"
-              />
-            </a>
+            // <a href="https://hubs.mozilla.com/docs/intro-avatars.html" target="_blank" rel="noopener noreferrer">
+            //   <FormattedMessage
+            //     id="avatar-url-modal.custom-avatar-docs-link"
+            //     defaultMessage="Learn more about custom avatars"
+            //   />
+            // </a>
           }
-        /> */}
+        />
         <ApplyButton type="submit" />
       </Column>
     </Modal>
