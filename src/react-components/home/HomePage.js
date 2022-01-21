@@ -109,6 +109,9 @@ export function HomePage() {
       <div className="row" style={{marginTop: 50}}>
         <div className="col-md-3">
         </div>
+        <div style={{display: 'none'}}>
+            {canCreateRooms && <CreateRoomButton />}
+        </div>
         {/* <div className="col-md-6" style={{display: 'flex', justifyContent: 'center'}}>
           <div className="buttons" style={{textAlign: 'center'}}>
             <div>
