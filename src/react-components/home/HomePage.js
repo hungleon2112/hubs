@@ -88,7 +88,7 @@ export function HomePage() {
         </div>
         <div className="col-md-6" style={{display: 'flex', justifyContent: 'center'}}>
           <div>
-            <button onClick={()=> {window.open("https://meta-xyz.live/Y2e54ot/cocktail-bar/", "_blank");}} className="home-buttons">Cocktailbar Metaverse</button>
+            <button onClick={()=> {window.open("https://meta-xyz.live/PdSVuGZ/cocktail-bar", "_blank");}} className="home-buttons">Cocktailbar Metaverse</button>
           </div>
         </div>
         <div className="col-md-3">
